@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M-Pesa Checkout"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/tvCheckoutTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"
+        android:layout_marginBottom="24dp"
+        android:text="Total Amount: KES 0"/>
+
+    <EditText
+        android:id="@+id/etMpesaPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="M-Pesa Phone (e.g., 254712345678)"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnInitiateStkPush"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay with M-Pesa STK Push"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvPaymentStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:gravity="center"
+        android:text=""/>
+
+</LinearLayout>
